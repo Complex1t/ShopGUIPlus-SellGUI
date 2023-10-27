@@ -585,6 +585,13 @@ public final class CommandSellGUI implements TabExecutor {
                 receiptNameComponent.setHoverEvent(hoverEvent);
             
                 player.spigot().sendMessage(itemsSoldComponent, receiptNameComponent);
+
+                //Addition
+                SellGUI.getPlugin().getLogger().info(player.getName() + " sold: ");
+                for (int i = 0; i < receiptList.size(); i++) {
+                    SellGUI.getPlugin().getLogger().info(receiptList.get(i));
+                }
+                //Addition End
             
             }
         
