@@ -38,6 +38,7 @@ public final class SellGUI extends JavaPlugin {
     public SellGUI() {
         this.configuration = new CommentedConfiguration();
         this.version = null;
+        plugin = this;
     }
 
 
