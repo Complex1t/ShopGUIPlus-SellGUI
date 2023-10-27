@@ -30,12 +30,22 @@ public final class SellGUI extends JavaPlugin {
     private String version;
 
     public boolean compatible = false;
+
+    //Addition
+    private static SellGUI plugin;
+    //Addition End
     
     public SellGUI() {
         this.configuration = new CommentedConfiguration();
         this.version = null;
     }
 
+
+    //Addition
+    public static SellGUI getPlugin() {
+        return plugin;
+    }
+    //Addition End
 
 
 
